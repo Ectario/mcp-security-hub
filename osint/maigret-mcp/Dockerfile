@@ -11,12 +11,8 @@ LABEL org.opencontainers.image.licenses="MIT"
 RUN apk add --no-cache \
     tini \
     git \
-    python3 \
-    py3-pip \
+    docker-cli \
     && rm -rf /var/cache/apk/*
-
-# Install maigret
-RUN pip3 install --break-system-packages maigret
 
 WORKDIR /app
 
