@@ -2,6 +2,8 @@
 
 A Model Context Protocol server that provides security scanning capabilities using [Aqua Security's Trivy](https://github.com/aquasecurity/trivy) scanner.
 
+> **Note**: This MCP server uses the official [Aqua Security trivy-mcp plugin](https://github.com/aquasecurity/trivy-mcp).
+
 ## Tools
 
 | Tool | Description |
