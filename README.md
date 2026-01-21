@@ -1,9 +1,9 @@
 # Offensive Security MCP Servers
 
-[![Build Status](https://github.com/FuzzingLabs/offensive-security-mcps/actions/workflows/build.yml/badge.svg)](https://github.com/FuzzingLabs/offensive-security-mcps/actions/workflows/build.yml)
-[![Security Scan](https://github.com/FuzzingLabs/offensive-security-mcps/actions/workflows/security-scan.yml/badge.svg)](https://github.com/FuzzingLabs/offensive-security-mcps/actions/workflows/security-scan.yml)
+[![Build Status](https://github.com/FuzzingLabs/mcp-security-hub/actions/workflows/build.yml/badge.svg)](https://github.com/FuzzingLabs/mcp-security-hub/actions/workflows/build.yml)
+[![Security Scan](https://github.com/FuzzingLabs/mcp-security-hub/actions/workflows/security-scan.yml/badge.svg)](https://github.com/FuzzingLabs/mcp-security-hub/actions/workflows/security-scan.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MCP Protocol](https://img.shields.io/badge/MCP-2024--11--05-blue.svg)](https://modelcontextprotocol.io/)
+[![MCP Protocol](https://img.shields.io/badge/MCP-Protocol-blue.svg)](https://modelcontextprotocol.io/)
 
 Production-ready, Dockerized MCP (Model Context Protocol) servers for offensive security tools. Enable AI assistants like Claude to perform security assessments, vulnerability scanning, and binary analysis.
 
@@ -25,8 +25,8 @@ Production-ready, Dockerized MCP (Model Context Protocol) servers for offensive 
 
 ```bash
 # Clone the repository
-git clone https://github.com/FuzzingLabs/offensive-security-mcps
-cd offensive-security-mcps
+git clone https://github.com/FuzzingLabs/mcp-security-hub
+cd mcp-security-hub
 
 # Build all MCP servers
 docker-compose build
@@ -200,7 +200,7 @@ All containers implement defense-in-depth:
 ## Project Structure
 
 ```
-offensive-security-mcps/
+mcp-security-hub/
 ├── reconnaissance/
 │   ├── nmap-mcp/           # Port scanning
 │   ├── shodan-mcp/         # Internet device search (wrapper)
