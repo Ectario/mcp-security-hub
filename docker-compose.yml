@@ -295,31 +295,6 @@ services:
   # ===========================================================================
   # Exploitation
   # ===========================================================================
-  metasploit-mcp:
-    build:
-      context: ./exploitation/metasploit-mcp
-      dockerfile: Dockerfile
-    image: ghcr.io/fuzzinglabs/metasploit-mcp:latest
-    container_name: metasploit-mcp
-    environment:
-      - MSF_PASSWORD=${MSF_PASSWORD:-}
-      - MSF_SERVER=${MSF_SERVER:-127.0.0.1}
-      - MSF_PORT=${MSF_PORT:-55553}
-    ports:
-      - "3005:3000"
-    networks:
-      - mcp-network
-    restart: unless-stopped
-    security_opt:
-      - no-new-privileges:true
-    cap_drop:
-      - ALL
-    deploy:
-      resources:
-        limits:
-          cpus: '1'
-          memory: 1G
-
   searchsploit-mcp:
     build:
       context: ./exploitation/searchsploit-mcp
