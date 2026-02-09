@@ -108,7 +108,9 @@
                                 </h3>
                                 <div class="flex gap-2" style="margin-top: 0.5rem;">
                                     {% if server.is_wrapper %}
-                                    <span class="badge badge-wrapper">Wrapper</span>
+                                    <span class="badge badge-community"><i class="bi bi-people-fill"></i> Community</span>
+                                    {% else %}
+                                    <span class="badge badge-original"><i class="bi bi-shield-fill-check"></i> FuzzingLabs</span>
                                     {% endif %}
                                     {% if server.tools_count %}
                                     <span class="badge badge-tools">{{ server.tools_count }} tools</span>
@@ -116,7 +118,7 @@
                                 </div>
                             </div>
                             {% if server.external_url %}
-                            <a href="{{ server.external_url }}" class="btn btn-ghost" target="_blank" title="Upstream repo" style="padding: 0.375rem 0.5rem;">
+                            <a href="{{ server.external_url }}" class="btn btn-ghost" target="_blank" title="View original repo" style="padding: 0.375rem 0.5rem;">
                                 <i class="bi bi-box-arrow-up-right"></i>
                             </a>
                             {% endif %}
